@@ -32,25 +32,23 @@ namespace divisao
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("O denominador digitado não pode se usado para dividir, por favor insira um número que não seja zero");
-                Console.ResetColor();
-                Environment.Exit(1);
             }
-
             else
             {
                 decimal resultado = numerador / denominador;
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine($"{numerador} dividido por {denominador} é {resultado}");
-
-                Console.WriteLine();
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("Toque em uma tecla para finalizar o programa");
-                Console.ReadKey();
-
-                Console.Clear();
             }
 
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Toque em uma tecla para finalizar o programa");
+            Console.ReadKey();
+
+            Console.Clear();
+
+            Console.ResetColor();
         }
     }
 }
